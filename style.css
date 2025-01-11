@@ -1,0 +1,202 @@
+/* Universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "Esteban", serif;
+    /* font-family: "Oleo Script", serif; */
+
+  font-weight: 400;
+  font-style: normal;
+    background-color: #fef9ec;
+}
+.hero{
+    height: 85vh;
+    width: 100%;
+    background: fef9ec;
+    border: 1px solid red;
+    overflow: visible;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container{
+    /* max-width: ; */
+    width: 100%;
+    margin: 0 auto 0 auto;
+    /* padding: 1rem 0; */
+}
+.navbar{
+    /* background: ; */
+    box-shadow: 0 0 20px 0 rgba(69, 80, 115,0.1);
+    backdrop-filter: blur(100px);
+    margin: 1rem 28rem 0 28rem;
+    height: 5rem;
+    padding: 0 2rem;
+    z-index: 1;
+    border: 2px solid white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+.navbar-brand img{
+    height: auto;
+    max-width:50%;
+    cursor: pointer;
+}
+#main_nav{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.navbar-nav{
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-direction: row;
+    
+}
+.navbar-nav li{
+    padding: 0 1.25rem;
+    margin: auto;
+}
+.navbar-nav li a{
+    color: #001c49;
+    font-size: 1.25rem;
+}
+.navbar-nav li:hover{
+    border: 1px solid red;
+    border-radius: 50px; 
+    /* transition: 0.3s; */
+    /* padding: 0.625rem 1.56rem; */
+}
+.navbar-nav li:visited{
+    border: 1px solid red;
+    border-radius: 50px; 
+    /* transition: 0.3s; */
+    /* padding: 0.625rem 1.56rem; */
+}
+
+
+.navbar-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 28rem;
+    padding: 1rem 0;
+    height: 5rem;
+    /* width: 45%; */
+    border: 2px solid white;
+    border-radius: 50px;
+    /* background-color: white; */
+    backdrop-filter: blur(100px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 20px 0 rgba(69, 80, 115,0.1);
+}
+.navbar-wrapper:hover{
+    background-color: rgb(255, 207, 124);
+}
+header{
+    /* width: 35%; */
+    /* height: 70px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 0px; */
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    /* display: block; */
+    color: #001c49;
+    font-size: 1.25rem;
+    padding: 0.625rem 1.56rem;
+    /* for debugging purposes */
+    border-radius: 50px; 
+    transition: 0.3s;
+    /* position: relative; */
+}
+.nav-bar ul li a:hover{
+    color: #001c49;
+    border: 1px solid #c8b38b;
+}
+.nav-bar ul li a.active{
+    color: #001c49;
+    border: 1px solid #c8b38b;
+    
+}
+
+/* For the mobile view, we will hide the header and display the hamburger menu. We will also hide the ul and display it when the hamburger menu is clicked. */
+@media only screen and (max-width:900px){
+    header{
+        border: none;
+        background-color: #e9dfcdeb;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+        border-radius: 50px;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #e9dfcdeb;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 100vh;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin: 20px 0;
+    }
+}
+
+.carousel{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #001c49; */
+    border: 1px solid red;
+}
+
+.carousel1{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid red;
+
+    /* background-color: #001c49; */
+}
