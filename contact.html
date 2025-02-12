@@ -9,7 +9,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Esteban&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <title>Milky Pop in Phusro - Kingsfeast Ice Cream</title>
     <link rel="stylesheet" href="styles/contact.css">
 </head>
@@ -52,15 +53,89 @@
 
     </header>
 
-    <section class = "contact-container-1">
+    <section class="contact-container-1">
         <div class="contact-headline">
             <h1>Contact us to Order your MilkyPop Now!!</h1>
-            <h3>Sell it to your Retail Businesses</h3>
+            <h3>Sell it to your Retail Businesses.</h3>
         </div>
     </section>
 
-    
 
+    <section class="contact-form-section">
+        <form action="/submit_contact" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group-radio">
+                <label>Subject:</label>
+                <div>
+                    <input type="radio" id="order_inquiry" name="subject" value="Order Inquiry" required>
+                    <label for="order_inquiry">Order Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="general_question" name="subject" value="General Question" required>
+                    <label for="general_question">General Question</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit -></button>
+            </div>
+        </form>
+    </section>
+
+
+    <section class="contact-address-section">
+        <div class="contact-address-container">
+
+            <div class="contact-email-phone">
+                <div class="contact-email">
+                    <a href="mailto:abc@xyz.com">abc@xyz.com</a>
+                </div>
+                <div class="contact-phone">
+                    <a href="tel:+911234567890">+91-1234567890</a>
+                </div>
+            </div>
+
+            <h3>Reach Out Us Here:</h3>
+
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.4265425575086!2d85.99206227522312!3d23.764555978660802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f414342e70d78b%3A0x3887e0ad9218bad5!2sV-Mart%20-%20Phusro!5e1!3m2!1sen!2sin!4v1739354054102!5m2!1sen!2sin"
+                    width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-socials-section">
+        <div class="contact-social-container">
+            <h3>Follow us on Socials:</h3>
+            <div class="contact-social-links">
+                <div class="a">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="b">
+                    <a href="#">Twitter</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -95,11 +170,11 @@
             </div>
         </div>
     </footer>
-    
+
     <div class="copyright-container">
         <div class="copyright">
-            <div class="copyright-name"> 
-                <p>© Copyright <span id="currentYear"></span>, All Rights Reserved  |  Kingsfeast</p>
+            <div class="copyright-name">
+                <p>© Copyright <span id="currentYear"></span>, All Rights Reserved | Kingsfeast</p>
             </div>
             <div class="shotout">
                 <p>Designed with ❤️, Made by <a href="https://www.rahulsaw.me" target="_blank">Rahul</a></p>
