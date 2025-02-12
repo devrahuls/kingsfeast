@@ -9,11 +9,13 @@
 body{
     font-family: "Esteban", serif;
     /* font-family: "Oleo Script", serif; */
-    
+
   font-weight: 400;
   font-style: normal;
     background-color: #fef9ec;
 }
+
+
 
 header{
     position: fixed;
@@ -139,155 +141,90 @@ header{
     }
 }
 
-.hero{
+.about-first-container{
     height: 100vh;
     width: 100%;
-    background: #001c49;
     border: 1px solid red;
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
-.hero-container{
-    margin: 0 10rem 0 10rem;
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.why-choose-kingsfeast{
+    padding: 0 10rem;
 }
 
-.hero-text{
-    display: flex;
-    flex-direction: column;
-    padding: 0 10rem 0 10rem;
+.why-choose-kingsfeast h1{
+    font-size: 6.25rem;
+    font-weight: 700;
+    color: #001c49;
+    margin-bottom: 1rem;
 }
-.ft-content img{
+.why-choose-kingsfeast p{
+    font-size: 1.25rem;
+    color: #001c49;
+    margin-bottom: 1rem;
+}
+
+.about-second-container{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-second-container div{
+    padding: 0 10rem;
+}
+.about-second-container h1{
+    font-size: 6.25rem;
+    font-weight: 700;
+    color: #001c49;
+    margin-bottom: 1rem;
+}
+.about-second-container p{
+    font-size: 1.25rem;
+    color: #001c49;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+
+.retailers-about{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    flex-direction: column;
+}
+.retailers-about h1{
+    /* text-align: left; */
+}
+
+
+.retailers-about-container{
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.short-description{
+    /* width: 100%; */
+}
+.retailers-photo{
+    display: flex;
+}
+.retailers-photo img{
     height: auto;
     max-width: 100%;
-    border-radius: 0 0 0 20%;
-}
-.ft-content{
-    padding: 0 10rem 0 10rem;
-
-}
-
-.short-about{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 10rem 0 10rem;
-}
-.short-about h1{
-    font-size: 100px;
-}
-.short-about p{
-    font-size: 20px;
-    line-height: 30px;
-}
-
-
-.ft-prodcuts{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 10rem 0 10rem;
-    border: 1px solid red;
-}
-.ft-prodcuts .card-hz{
-    border: 3px solid white;
-    border-radius: 20px; /*Card border-radius = padding + img border-radius*/
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    backdrop-filter: blur(100px);
-    box-shadow: 0 0 20px 0 rgba(69, 80, 115,0.1);
-}
-.cardd{
-    margin-bottom: 50px;
-}
-.ft-prodcuts .card-vt{
-    border: 3px solid white;
-    margin-bottom: 10px;
     border-radius: 20px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    backdrop-filter: blur(100px);
-    box-shadow: 0 0 20px 0 rgba(69, 80, 115,0.1);
-}
-.right-ft{
-    margin-left: 50px;
-}
-.ft-prodcuts p{
-    font-size: 20px;
-    line-height: 30px;
-}
-.ft-prodcuts img{
-    height: auto;
-    max-width: 30%;
-    border-radius: 10px;
-}
-
-
-.cx-reviews{
-    height: 80vh;
-    width: 100%;
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    /* gap: 1rem; */
-}
-.cx-reviews h1{
-    font-size: 3rem;
-}
-.review-card-scroller{
-    padding: 0 5rem 0 5rem;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-    gap: 2rem;
-    /* flex-direction: row; */
-}
-.review-card-scroller .review-card{
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.review-card-scroller .review-card p{
-    /* padding: 0 2rem 0 2rem; */
-    font-size: 1.25rem;
-}
-.review-card-scroller .review-card h2{
-    font-size: 2rem;
-}
-
-.review-card-scroller img{
-    height: auto;
-    max-width: 50%;
 }
 
 
 
-
-
-
-.extra{
-    height: 100vh;
-    width: 100%;
-    border: 1px solid red;
-}
 
 
 footer{
@@ -321,6 +258,3 @@ footer{
     justify-content: space-around;
     padding: 1rem 0;
 }
-
-
-

@@ -9,11 +9,13 @@
 body{
     font-family: "Esteban", serif;
     /* font-family: "Oleo Script", serif; */
-    
+
   font-weight: 400;
   font-style: normal;
     background-color: #fef9ec;
 }
+
+
 
 header{
     position: fixed;
@@ -139,155 +141,91 @@ header{
     }
 }
 
-.hero{
-    height: 100vh;
-    width: 100%;
-    background: #001c49;
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-}
-.hero-container{
-    margin: 0 10rem 0 10rem;
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+
+
+
+
+section{
+    padding: 2rem 10rem;
 }
 
-.hero-text{
+.product-headline{
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin: 4rem 0;
+}
+.product-headline h1{
+    font-size: 5rem;
+}
+
+.products-container{
     display: flex;
     flex-direction: column;
-    padding: 0 10rem 0 10rem;
+    gap: 2rem;
 }
-.ft-content img{
-    height: auto;
-    max-width: 100%;
-    border-radius: 0 0 0 20%;
-}
-.ft-content{
-    padding: 0 10rem 0 10rem;
-
-}
-
-.short-about{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 10rem 0 10rem;
-}
-.short-about h1{
-    font-size: 100px;
-}
-.short-about p{
-    font-size: 20px;
-    line-height: 30px;
-}
-
-
-.ft-prodcuts{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 10rem 0 10rem;
+.product{
     border: 1px solid red;
-}
-.ft-prodcuts .card-hz{
-    border: 3px solid white;
-    border-radius: 20px; /*Card border-radius = padding + img border-radius*/
-    padding: 10px;
+    height: 90vh;
+    width: 100%;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
-    backdrop-filter: blur(100px);
-    box-shadow: 0 0 20px 0 rgba(69, 80, 115,0.1);
-}
-.cardd{
-    margin-bottom: 50px;
-}
-.ft-prodcuts .card-vt{
-    border: 3px solid white;
-    margin-bottom: 10px;
+    /* justify-content: space-between; */
     border-radius: 20px;
-    padding: 10px;
+}
+.product > div {
+    flex: 1;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(100px);
-    box-shadow: 0 0 20px 0 rgba(69, 80, 115,0.1);
 }
-.right-ft{
-    margin-left: 50px;
+.product-cta{
+    display: flex;
+    flex-direction: column;
 }
-.ft-prodcuts p{
-    font-size: 20px;
-    line-height: 30px;
-}
-.ft-prodcuts img{
+.price-tag{
+    z-index: 1;
+    position: absolute;
+    left: 11rem;
+    top: 5rem;
+    width: 7%;
     height: auto;
-    max-width: 30%;
+    rotate: -20deg;
+}
+.product-cta button{
+    width: 80%;
+    margin-top: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.product img{
+    max-width: 80%;
+    height: auto;
     border-radius: 10px;
 }
-
-
-.cx-reviews{
-    height: 80vh;
-    width: 100%;
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    /* gap: 1rem; */
+.product h3{
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
 }
-.cx-reviews h1{
-    font-size: 3rem;
-}
-.review-card-scroller{
-    padding: 0 5rem 0 5rem;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-    gap: 2rem;
-    /* flex-direction: row; */
-}
-.review-card-scroller .review-card{
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.review-card-scroller .review-card p{
-    /* padding: 0 2rem 0 2rem; */
-    font-size: 1.25rem;
-}
-.review-card-scroller .review-card h2{
-    font-size: 2rem;
-}
-
-.review-card-scroller img{
-    height: auto;
-    max-width: 50%;
+.product p{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: normal;
 }
 
 
 
 
-
-
-.extra{
-    height: 100vh;
-    width: 100%;
-    border: 1px solid red;
-}
 
 
 footer{
@@ -321,6 +259,3 @@ footer{
     justify-content: space-around;
     padding: 1rem 0;
 }
-
-
-
