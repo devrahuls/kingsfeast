@@ -16,7 +16,7 @@ body{
 }
 
 header{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 1000;
 }
@@ -46,7 +46,7 @@ header{
 }
 .navbar-brand img{
     height: auto;
-    max-width:50%;
+    max-width:55%;
     cursor: pointer;
 }
 #main_nav{

@@ -1,147 +1,93 @@
 /* Universal */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
-body{
-    font-family: "Esteban", serif;
-    /* font-family: "Oleo Script", serif; */
 
-  font-weight: 400;
-  font-style: normal;
+body {
+    font-family: "Esteban", serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #fef9ec;
 }
 
 
 
-header{
+header {
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
 
-.container{
-    /* max-width: ; */
+.container {
     width: 100%;
     margin: 0 auto 0 auto;
-    /* padding: 1rem 0; */
 }
-.navbar{
-    /* background: ; */
-    box-shadow: 0 0 20px 0 rgba(69, 80, 115,0.1);
+
+.navbar {
+    box-shadow: 0 0 20px 0 rgba(69, 80, 115, 0.1);
     backdrop-filter: blur(100px);
     margin: 1rem 28rem 0 28rem;
     height: 5rem;
-    padding: 0 2rem;
+    padding: 0 3rem;
     z-index: 1;
     border: 2px solid white;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;    
+    justify-content: flex-start;
 }
-.navbar:hover{
-    /* background: ; */
-}
-.navbar-brand img{
+
+.navbar-brand img {
     height: auto;
-    max-width:50%;
+    max-width: 30%;
     cursor: pointer;
 }
-#main_nav{
+
+#main_nav {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
-.navbar-nav{
+
+.navbar-nav {
     display: flex;
-    /* justify-content: flex-start; */
     flex-direction: row;
-    
+
 }
-.navbar-nav li{
+
+.navbar-nav li {
     padding: 0 1.25rem;
     margin: auto;
 }
-.navbar-nav li a{
+
+.navbar-nav li a {
     color: #001c49;
     font-size: 1.25rem;
 }
-.navbar-nav li:hover{
-    /* border: 1px solid red; */
-    /* border-radius: 50px;  */
+
+.navbar-nav li:hover {
     text-decoration: underline;
     text-decoration-color: #001c49;
     cursor: pointer;
-    /* transition: 0.3s; */
-    /* padding: 0.625rem 1.56rem; */
+    transition: 0.3s;
 }
-.navbar-nav li:visited{
+
+.navbar-nav li:visited {
     border: 1px solid red;
-    border-radius: 50px; 
+    border-radius: 50px;
     /* transition: 0.3s; */
     /* padding: 0.625rem 1.56rem; */
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
 
-/* For the mobile view, we will hide the header and display the hamburger menu. We will also hide the ul and display it when the hamburger menu is clicked. */
-@media only screen and (max-width:900px){
-    header{
-        border: none;
-        background-color: #e9dfcdeb;
-    }
-    .navbar{
-        border: none;
-    }
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger .line{
-        width: 30px;
-        height: 3px;
-        background-color: black;
-        margin: 5px 0;
-        border-radius: 50px;
-    }
-    #main_nav{
-        /* height: 0px; */
-        /* position: absolute; */
-        /* top: 80px; */
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background-color: #e9dfcdeb;
-        transition: 0.5s;
-        /* overflow: hidden; */
-    }
-    #main_nav.active{
-        height: 100vh;
-    }
-    #main_nav ul{
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-    }
-    #main_nav.active ul{
-        opacity: 1;
-    }
-    #main_nav ul li a{
-        margin: 20px 0;
-    }
-}
-
-.about-first-container{
+.about-first-container {
     height: 100vh;
     width: 100%;
     border: 1px solid red;
@@ -150,23 +96,25 @@ header{
     justify-content: center;
 
 }
-.why-choose-kingsfeast{
+
+.why-choose-kingsfeast {
     padding: 0 10rem;
 }
 
-.why-choose-kingsfeast h1{
+.why-choose-kingsfeast h1 {
     font-size: 6.25rem;
     font-weight: 700;
     color: #001c49;
     margin-bottom: 1rem;
 }
-.why-choose-kingsfeast p{
+
+.why-choose-kingsfeast p {
     font-size: 1.25rem;
     color: #001c49;
     margin-bottom: 1rem;
 }
 
-.about-second-container{
+.about-second-container {
     height: 100vh;
     width: 100%;
     border: 1px solid red;
@@ -174,16 +122,19 @@ header{
     align-items: center;
     justify-content: center;
 }
-.about-second-container div{
+
+.about-second-container div {
     padding: 0 10rem;
 }
-.about-second-container h1{
+
+.about-second-container h1 {
     font-size: 6.25rem;
     font-weight: 700;
     color: #001c49;
     margin-bottom: 1rem;
 }
-.about-second-container p{
+
+.about-second-container p {
     font-size: 1.25rem;
     color: #001c49;
     margin-bottom: 1rem;
@@ -191,7 +142,7 @@ header{
 }
 
 
-.retailers-about{
+.retailers-about {
     height: 100vh;
     width: 100%;
     border: 1px solid red;
@@ -200,24 +151,28 @@ header{
     /* justify-content: space-around; */
     flex-direction: column;
 }
-.retailers-about h1{
+
+.retailers-about h1 {
     /* text-align: left; */
 }
 
 
-.retailers-about-container{
+.retailers-about-container {
     padding: 0 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.short-description{
+
+.short-description {
     /* width: 100%; */
 }
-.retailers-photo{
+
+.retailers-photo {
     display: flex;
 }
-.retailers-photo img{
+
+.retailers-photo img {
     height: auto;
     max-width: 100%;
     border-radius: 20px;
@@ -227,34 +182,225 @@ header{
 
 
 
-footer{
+footer {
     background-color: #001c49;
     color: white;
+    border-radius: 15px 15px 0 0;
+    /* border: 1px solid green; */
 }
-.footer-container{
+
+.footer-container {
     padding: 2rem 10rem 2rem 10rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 20px;
 }
-.footer-container .footer-links{
+
+.footer-container .footer-links {
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 10px;
 }
 
-.copyright-container{
+.social-links a img:hover {}
+
+.copyright-container {
     background-color: #001c49;
     padding: 0rem 10rem;
     color: white;
 
 }
-.copyright{
+
+.copyright {
     border-top: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For the mobile view, we will hide the header and display the hamburger menu. We will also hide the ul and display it when the hamburger menu is clicked. */
+@media only screen and (max-width:1024px) {
+    header {
+        border: none;
+        box-shadow: 0 0 20px 0 rgba(69, 80, 115, 0.1);
+        backdrop-filter: blur(100px);
+        border: 1px solid white;
+        width: 100%;
+    }
+
+    /* .container {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    } */
+
+    .navbar {
+        border: none;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .navbar-brand img {
+        height: auto;
+        width: 100%;
+        max-width: 100px;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        /* flex-direction: column; */
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1002;
+
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+        border-radius: 50px;
+    }
+
+    #main_nav.active {
+        height: 80vh;
+        width: 100%;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        background-color: #e9dfcdeb;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 1001;
+    }
+
+    #main_nav ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    #main_nav.active ul {
+        opacity: 1;
+    }
+
+    #main_nav ul li a {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width:830px) {
+    .about-first-container .why-choose-kingsfeast 
+    .about-second-container .retailers-about .retailers-about-container 
+    .short-description .retailers-photo .footer-container 
+    .footer-links {
+        padding: 0 1rem;
+    }
+
+    .why-choose-kingsfeast h1 {
+        font-size: 3.25rem;
+    }
+
+    .why-choose-kingsfeast p {
+        font-size: 1rem;
+    }
+
+    .about-second-container div {
+        padding: 0 1rem;
+    }
+
+    .about-second-container h1 {
+        font-size: 3.25rem;
+    }
+
+    .about-second-container p {
+        font-size: 1rem;
+    }
+
+    .retailers-about h1 {
+        font-size: 3.25rem;
+    }
+
+    .retailers-photo img {
+        height: auto;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    footer {
+        padding: 2rem 1rem 2rem 1rem;
+
+    }
+
+    .footer-container {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+
+
+    .social-links a img:hover {}
+
+    .footer-container .footer-links a {
+        font-size: 1rem;
+    }
+
+    .footer-container .footer-links a:hover {
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+
+    .footer-container .footer-links a:visited {
+        border: 1px solid red;
+        border-radius: 50px;
+        /* transition: 0.3s; */
+        /* padding: 0.625rem 1.56rem; */
+    }
+
+    .footer-container .footer-links a:active {
+        border: 1px solid red;
+        border-radius: 50px;
+        /* transition: 0.3s; */
+        /* padding: 0.625rem
+    1.56rem; */
+    }
 }
