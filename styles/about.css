@@ -249,16 +249,16 @@ footer {
         border: none;
         box-shadow: 0 0 20px 0 rgba(69, 80, 115, 0.1);
         backdrop-filter: blur(100px);
-        border: 1px solid white;
+        border-bottom: 1px solid white;
         width: 100%;
     }
 
-    /* .container {
+    .container {
         display: flex;
         width: 100%;
         margin: 0;
         padding: 0;
-    } */
+    }
 
     .navbar {
         border: none;
