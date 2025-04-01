@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: "Esteban", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
     background-color: #fef9ec;
@@ -16,6 +16,7 @@ body {
 
 
 
+/* Header */
 header {
     position: fixed;
     width: 100%;
@@ -23,14 +24,16 @@ header {
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto 0 auto;
+    max-width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
     box-shadow: 0 0 20px 0 rgba(69, 80, 115, 0.1);
     backdrop-filter: blur(100px);
-    margin: 1rem 28rem 0 28rem;
     height: 5rem;
     padding: 0 3rem;
     z-index: 1;
@@ -39,12 +42,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 600px; /* Set a fixed width */
+    
 }
 
 .navbar-brand img {
-    height: auto;
-    max-width: 30%;
+    height: 75px;
+    width: auto;
     cursor: pointer;
+    margin-right: 1rem;
 }
 
 #main_nav {
@@ -76,10 +82,7 @@ header {
 }
 
 .navbar-nav li:visited {
-    border: 1px solid red;
     border-radius: 50px;
-    /* transition: 0.3s; */
-    /* padding: 0.625rem 1.56rem; */
 }
 
 .hamburger {
@@ -90,26 +93,24 @@ header {
 .about-first-container {
     height: 100vh;
     width: 100%;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.why-choose-kingsfeast {
     padding: 0 10rem;
 }
 
+.why-choose-kingsfeast {
+}
+
 .why-choose-kingsfeast h1 {
-    font-size: 6.25rem;
+    font-size: 6.5rem;
     font-weight: 700;
     color: #001c49;
     margin-bottom: 1rem;
 }
 
 .why-choose-kingsfeast p {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     color: #001c49;
     margin-bottom: 1rem;
 }
@@ -117,94 +118,150 @@ header {
 .about-second-container {
     height: 100vh;
     width: 100%;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.about-second-container div {
     padding: 0 10rem;
 }
 
-.about-second-container h1 {
-    font-size: 6.25rem;
+.about-second-container div {
+}
+
+.vision-and-mission h1 {
+    font-size: 6.5rem;
     font-weight: 700;
     color: #001c49;
     margin-bottom: 1rem;
 }
 
-.about-second-container p {
-    font-size: 1.25rem;
+.vision-and-mission p {
+    font-size: 1.75rem;
     color: #001c49;
     margin-bottom: 1rem;
-    text-align: left;
+    /* text-align: left; */
 }
 
 
 .retailers-about {
     height: 100vh;
     width: 100%;
-    border: 1px solid red;
+    padding: 2rem 10rem;
+}
+.retailers-about h1{
+    font-size: 5.25rem;
+    font-weight: 700;
+    color: #001c49;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.retailers-about-container{
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
 }
-
-.retailers-about h1 {
-    /* text-align: left; */
-}
-
-
-.retailers-about-container {
-    padding: 0 10rem;
+.retailers{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    flex: 3;
 }
-
-.short-description {
-    /* width: 100%; */
-}
-
-.retailers-photo {
-    display: flex;
-}
-
-.retailers-photo img {
+.retailers img {
     height: auto;
-    max-width: 100%;
+    width: 270px;
+    max-width: 80%;
     border-radius: 20px;
 }
+.retailer-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+.short-description{
+    flex: 2;
+}
+.short-description p{
+    font-size: 1.25rem;
+    color: #001c49;
+    line-height: 1.6;
+}
+
+
+.team-and-founders{
+    height: 100vh;
+    width: 100%;
+    padding: 0rem 10rem;
+    color: #001c49;
+}
+.team-and-founders h1{
+    font-size: 5.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.team-and-founders-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.team-and-founders-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.team-and-founders-container img {
+    height: auto;
+    width: 270px;
+    max-width: 80%;
+    border-radius: 20px;
+}
+.team-and-founders-container img:hover {
+    transform: translateY(-5px);
+}
 
 
 
-
-
+/*Footer Section*/
 footer {
     background-color: #001c49;
     color: white;
     border-radius: 15px 15px 0 0;
-    /* border: 1px solid green; */
 }
 
 .footer-container {
     padding: 2rem 10rem 2rem 10rem;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-around;
-    gap: 20px;
+    gap: 2rem;
 }
 
-.footer-container .footer-links {
+.f-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 550px;
+}
+
+.footer-links, .footer-contacts {
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 10px;
 }
 
-.social-links a img:hover {}
+.footer-links a, .footer-contacts a {
+    color: #01bbd5;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
 
 .copyright-container {
     background-color: #001c49;
@@ -220,6 +277,14 @@ footer {
     justify-content: space-around;
     padding: 1rem 0;
 }
+.copyright .shotout{
+    font-size: 12px;
+}
+.copyright .shotout a{
+    text-decoration: none;
+    color: #fef9ec;
+    text-decoration: underline;
+}
 
 
 
@@ -229,22 +294,11 @@ footer {
 
 
 
+/* Media Queries */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* For the mobile view, we will hide the header and display the hamburger menu. We will also hide the ul and display it when the hamburger menu is clicked. */
-@media only screen and (max-width:1024px) {
+@media (max-width: 992px) {
+    /*Header*/
     header {
         border: none;
         box-shadow: 0 0 20px 0 rgba(69, 80, 115, 0.1);
@@ -257,7 +311,6 @@ footer {
         display: flex;
         width: 100%;
         margin: 0;
-        padding: 0;
     }
 
     .navbar {
@@ -274,14 +327,13 @@ footer {
     .navbar-brand img {
         height: auto;
         width: 100%;
-        max-width: 100px;
+        max-width: 80px;
         cursor: pointer;
     }
 
     .hamburger {
         display: block;
         cursor: pointer;
-        /* flex-direction: column; */
         position: absolute;
         right: 1.5rem;
         top: 50%;
@@ -329,78 +381,91 @@ footer {
     }
 }
 
-@media only screen and (max-width:830px) {
-    .about-first-container .why-choose-kingsfeast 
-    .about-second-container .retailers-about .retailers-about-container 
-    .short-description .retailers-photo .footer-container 
-    .footer-links {
-        padding: 0 1rem;
-    }
-
-    .why-choose-kingsfeast h1 {
-        font-size: 3.25rem;
-    }
-
-    .why-choose-kingsfeast p {
-        font-size: 1rem;
-    }
-
-    .about-second-container div {
-        padding: 0 1rem;
-    }
-
-    .about-second-container h1 {
-        font-size: 3.25rem;
-    }
-
-    .about-second-container p {
-        font-size: 1rem;
-    }
-
-    .retailers-about h1 {
-        font-size: 3.25rem;
-    }
-
-    .retailers-photo img {
+@media only screen and (max-width: 768px) {
+    .about-first-container, .about-second-container, .retailers-about, .team-and-founders {
+        width: 100%;
         height: auto;
-        max-width: 100%;
-        border-radius: 20px;
+        overflow-x: hidden;
+        padding: 2rem 2rem;
+    }
+    .why-choose-kingsfeast{
+        margin-top: 5rem;
+    }
+    .why-choose-kingsfeast h1{
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+    .why-choose-kingsfeast p{
+        font-size: 1.25rem;
+        line-height: 1.6;
     }
 
-    footer {
-        padding: 2rem 1rem 2rem 1rem;
-
+    .vision-and-mission h1{
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+    .vision-and-mission p{
+        font-size: 1.25rem;
+        line-height: 1.6;
     }
 
-    .footer-container {
-        padding: 2rem 1rem 2rem 1rem;
+
+    .retailers-about-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2rem 0 1rem 0;
+    }
+    .retailers-about h1{
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+    .short-description p{
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
+
+
+    .team-and-founders h1{
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+    .team-member p{
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: #001c49;
+    }
+    .team-and-founders-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-and-founders-container div{
+        margin: 1rem 0;
+    }
+    .team-and-founders-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
 
 
 
-    .social-links a img:hover {}
-
-    .footer-container .footer-links a {
-        font-size: 1rem;
+    .f-top{
+        gap: 3rem;
     }
-
-    .footer-container .footer-links a:hover {
-        text-decoration: underline;
-        text-decoration-color: white;
+    .footer-container{
+        padding: 2rem 2rem;
+        gap: 2.5rem;
     }
-
-    .footer-container .footer-links a:visited {
-        border: 1px solid red;
-        border-radius: 50px;
-        /* transition: 0.3s; */
-        /* padding: 0.625rem 1.56rem; */
+    .copyright-container{
+        padding: 0rem 2rem;
     }
-
-    .footer-container .footer-links a:active {
-        border: 1px solid red;
-        border-radius: 50px;
-        /* transition: 0.3s; */
-        /* padding: 0.625rem
-    1.56rem; */
-    }
+    .copyright{
+        padding: 1rem 0;
+        flex-direction: column;
+        gap: 1rem;
+    }   
 }
+
+
