@@ -357,7 +357,8 @@ footer {
         top: 5rem;
         left: 0;
         right: 0;
-        background-color: #e9dfcdeb;
+        /* background-color: #e9dfcdeb; */
+        background-color: #e9dfcdf8;
         transition: 0.5s;
         overflow: hidden;
         z-index: 1001;
